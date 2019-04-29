@@ -1,0 +1,105 @@
+Division of Work:
+    Ethan: Accounts + all child classes
+    Luka: Bank Worker + Bank Manager
+    Joshua: User
+    Conrad + Yuki: ATM  
+
+
+Testing:
+    Bankmanager: Test transactions, filling ATM.
+
+
+Class Hierchy:
+
+ATM:
+    Methods: Main Method, Below 20, Withdraw Method
+    Fields: Static Time, Currency Map, Users Map(Key: ID, Value: Userobject), Bankworkers Map(Key: ID, Value:BankworkObject)
+    Parent Class: None
+    Child Class: None
+User:
+    Methods: Exchange(Phase 2), get + set username, get + set password, change their own password.
+    Fields: Array of Accounts, User Username, User Password
+    Parent Class: None
+    Child Class: None
+
+Bank Workers(Abstract):
+    Methods:
+    Fields: Person Username, Person Password
+    Parent Class: None
+    Child Class: Bank Manager
+
+Bank Manager:
+    Methods: Set Password, Set username, fill ATM, undo transaction,
+    Fields: recent transaction,
+    Parent Class: Bank Worker(Abstract)
+    Child Class:
+
+Accounts(Abstract):
+    Methods:
+    Fields: Balance
+    Parent Class:
+    Child Class:
+
+    Debt Accounts(Abstract):
+        Methods: get balance, transfer in
+        Fields:
+        Parent Class: Accounts
+        Child Class: Credit Card, Line of Credit
+
+        Credit Card:
+            Methods:
+            Fields:
+            Parent Class: Debt Accounts
+            Child Class: None
+
+        Line of Credit:
+            Methods: transfer out
+            Fields:
+            Parent Class: Debt Accounts
+            Child Class: None
+
+    Asset Accounts(Abstact):
+        Methods: Deposit,
+        Fields:
+        Parent Class: Accounts
+        Child Class: Checking, Savings
+
+            Checking:
+                Methods: Withdraw
+                Fields:
+                Parent Class: Asset Accounts
+                Child Class: None
+
+            Savings:
+                Methods:
+                Fields:
+                Parent Class: Asset Accounts
+                Child Class: None
+
+Packages that may be useful to import
+import  main.java.ATM.*;
+import main.java.ATM.Screens.ScreenChildren.*;
+import main.java.ATM.Screens.*;
+import main.java.ATM.Accounts.AssetAccount.AssetAccountsChildren.*;
+import main.java.ATM.Person.Persons.User_Elements.*;
+
+import main.java.ATM.Accounts.DebtAccount.DebtAccountsChildren.*;
+import main.java.ATM.Accounts.DebtAccount.*;
+import main.java.ATM.ATM_Elements.*;
+
+import main.java.ATM.Person.Persons.BankWorkers.*;
+import main.java.ATM.Person.Persons.BankWorkers.BankWorkerChildren.*;
+
+import  main.java.ATM.*;
+import main.java.ATM.Screens.ScreenChildren.*;
+import main.java.ATM.Screens.ScreenChildren.UserScreens.*;
+import main.java.ATM.Screens.*;
+import main.java.ATM.Accounts.AssetAccount.AssetAccountsChildren.*;
+import main.java.ATM.Accounts.AssetAccount.*;
+import main.java.ATM.Person.Persons.User_Elements.*;
+import main.java.ATM.Person.*;
+import main.java.ATM.Accounts.*;
+import main.java.ATM.Accounts.DebtAccount.DebtAccountsChildren.*;
+import main.java.ATM.Accounts.DebtAccount.*;
+import main.java.ATM.ATM_Elements.*;
+import main.java.ATM.Transaction.*;

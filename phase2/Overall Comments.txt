@@ -1,0 +1,45 @@
+Overall Comments
+Dear Group_0318 Members,
+
+Thanks for your submission, please pay attention to the following notes in order to improve your project for phase 2:
+
+The size of your classes are generally reasonable. Good job on that!
+
+Good job with conforming to naming conventions and consistent style of coding! Keep up the good work for phase 2!
+
+There are a lot of static methods in your program. Some of them are unnecessary, for phase 2, please revisit your code
+and get rid of nontrivial static methods.
+
+Though I can see some comments in your code, some of your classes such as Screen don't have a single line of comment
+or Javadoc. Please try to write more comments for phase2.
+
+A good programming practice would be proper packaging of the classes. I suggest you do that for phase 2 as well.
+
+Please write a more detailed README file for phase 2. This file should contain an explanations about all of the
+functionalities of your program, input, and output files, etc.
+
+Nice welcome text! There is a logistics question: what would a new user (a person who does not have an account)
+do when he/she first interacts with your program? There should be some guiding notes in the README or the program
+that guides the user to request the bank manager in order to open an account.
+
+I got an exception when I wanted to transfer some money to a non-existing user account and when the program said:
+Username not in system try again, enter'e' to Exit Type username of person you would like to transfer account to"
+and I entered 'e', it threw an exception. Please test all the functionalities of your program for phase 2.
+
+The system doesn't tell the user whether the transaction was successful or not when he/she withdraws money.
+Please fix that in phase 2.
+
+Restocking the machine by bank manager cannot happen through your program. It would be good to write directions
+on how to restock the machine etc, in the README file.
+
+Processing account creation request also puts the program in a halting situation.
+
+By taking a quick look at your TransactionReversal and methods such as "AssetAccountTransferInReversal" or
+"AssetAccountTransferOutReversal", I see a lot of duplicate code. Please take proper measures to resolve this
+code smell in your program.
+
+Nice use of inheritance in your program. For phase 2, try considering interfaces as well.
+
+Looking forward to your next submission!
+
+All the best
