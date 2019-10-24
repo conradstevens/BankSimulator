@@ -1,6 +1,6 @@
 # BankSimulator
 
-This is a porject designed and created by Conrad Stevens ethan heimlich, luka djukic Joshua and Yuki 
+This is a porject designed and created by Conrad Stevens ethan heimlich, luka djukic Joshua Effe and Yuki 
 *My appologies for the missing last names getting to that asap
 
 This was an assignment for CSC207 at U of T
